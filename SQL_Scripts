@@ -1,3 +1,8 @@
 
 # Backup the entire certified skills database
 mysqldump -u certifiedskills_maindbu -p certifiedskills_maindb > /path/to/filename.sql
+
+
+# Insert Rows into skills Database
+INSERT INTO `serv_skills` (`id`, `skill_name`, `arabic_skill_name`, `spanish_skill_name`, `swedish_skill_name`, `image`, `parent_id`, `cat_id`, `status`, `show_status`) VALUES (NULL, 'Ship Husbandry', 'Ship Husbandry', 'Ship Husbandry', 'Ship Husbandry', '', '37', '0', 'Y', 'Y');
+
