@@ -1,0 +1,3 @@
+
+# Backup the entire certified skills database
+mysqldump -u certifiedskills_maindbu -p certifiedskills_maindb > /path/to/filename.sql
