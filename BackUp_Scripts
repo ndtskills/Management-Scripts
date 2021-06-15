@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#This script runs on Baloo via Cron 
+
 backupdate=$(date +"%d-%m-%Y")
 mkdir -p "/srv/dev-disk-by-label-WD_BLACK/CertifiedSkills/$backupdate"
 rsync -a -e "ssh -p 19103" certifiedskills@109.203.118.103:/home/certifiedskills/public_html/ "/srv/dev-disk-by-label-WD_BLACK/CertifiedSkills/$backupdate"
